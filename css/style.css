@@ -1,0 +1,94 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* style.css untuk versi Pendidikan Kewarganegaraan */
+
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fbeee6, #ffd6ba);
+  color: #2e2e2e;
+}
+
+.container {
+  max-width: 750px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #8B0000; /* merah marun */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  color: #b22222; /* dark red */
+  margin-top: 25px;
+}
+
+p {
+  font-size: 1.05em;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.05em;
+}
+
+strong {
+  color: #8B0000;
+}
+
+em {
+  color: #555555;
+  font-style: italic;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 20px;
+  background: #8B0000;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-back:hover {
+  background-color: #b22222;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 25px 15px;
+    padding: 25px 20px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p, ul li {
+    font-size: 1em;
+  }
+}

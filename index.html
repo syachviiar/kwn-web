@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lawan Hoaks - Edukasi Kewarganegaraan</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(135deg, #fbeee6, #ffd6ba);
+      color: #2e2e2e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .splash-container {
+      text-align: center;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 90%;
+      animation: scaleIn 0.8s ease;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+      color: #8B0000;
+    }
+
+    p {
+      font-size: 1em;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .btn-play, .btn-secondary {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn-play {
+      background: #8B0000;
+      color: white;
+    }
+
+    .btn-secondary {
+      background: #2e2e2e;
+      color: white;
+    }
+
+    .btn-play:hover, .btn-secondary:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-play:active, .btn-secondary:active {
+      transform: scale(0.97);
+    }
+
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .splash-container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      p {
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="splash-container">
+    <h1>Lawan Hoaks!</h1>
+    <p>Website Edukasi tentang Hoaks dan Dampaknya terhadap Kesadaran Kewarganegaraan</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5jY-CNb-O8xg2QTfTBC5jz8CclibidABP3w6c28rFPYljow/viewform?usp=dialog" class="btn-secondary">
+      <i class="bi bi-clipboard2-data"></i> Kuis Pre-Test</a>
+    <a href="main.html" class="btn-play"><i class="bi bi-play-fill"></i> Mulai
+    </a>  
+  </div>
+</body>
+</html>
